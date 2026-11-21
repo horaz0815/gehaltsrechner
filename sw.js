@@ -1,5 +1,5 @@
 // Service Worker: zuerst Netz (immer aktuell), offline aus dem Cache
-var CACHE = 'gehaltsrechner-3.2.0';
+var CACHE = 'gehaltsrechner-3.2.1';
 var FILES = ['./', 'index.html', 'manifest.json', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png'];
 self.addEventListener('install', function (e) {
     e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(FILES); }));
